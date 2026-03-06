@@ -1,0 +1,31 @@
+<header [class.scrolled]="isScrolled()">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <span class="logo-icon">◆</span>
+      <span class="logo-text">Inova<span class="logo-accent">Digital</span></span>
+    </a>
+
+    <nav class="nav-desktop">
+      <a href="#services">Services</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary header-cta">Get Started</a>
+
+    <button class="mobile-toggle" (click)="toggleMenu()" [attr.aria-label]="'Toggle menu'">
+      <span [class.open]="mobileMenuOpen()"></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" [class.active]="mobileMenuOpen()">
+    <nav>
+      <a href="#services" (click)="closeMenu()">Services</a>
+      <a href="#cases" (click)="closeMenu()">Case Studies</a>
+      <a href="#testimonials" (click)="closeMenu()">Testimonials</a>
+      <a href="#contact" (click)="closeMenu()">Contact</a>
+      <a href="#contact" class="btn btn-primary" (click)="closeMenu()">Get Started</a>
+    </nav>
+  </div>
+</header>

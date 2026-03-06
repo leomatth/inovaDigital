@@ -1,0 +1,62 @@
+.clients-section {
+  padding: 60px 0;
+  background: var(--white);
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.clients-label {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.clients-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.client-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.4;
+  transition: var(--transition);
+  cursor: default;
+}
+
+.client-logo:hover {
+  opacity: 0.8;
+}
+
+.client-initials {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-100);
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+}
+
+.client-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--gray-700);
+}
+
+@media (max-width: 768px) {
+  .clients-track {
+    gap: 30px;
+  }
+}
